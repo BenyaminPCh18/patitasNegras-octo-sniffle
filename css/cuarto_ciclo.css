@@ -1,0 +1,18 @@
+*{
+  font-size: 1.1em;
+}
+.enlace{
+  text-decoration: none;
+  color: gray;
+}
+.enlace:hover{
+  color: blue;
+  transition: 0.5s;
+}
+.titulo{
+  text-align: center;
+}
+
+ul>li{
+  display: block;
+}

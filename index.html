@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site 01</title>
+    <link rel="stylesheet" href="./css/website01.css">
+    <style media="screen">
+      :root{
+        --color01:#2DE31D;
+        --colorNav:#1D9113;
+      }
+      body{
+        /* background-color: rgba(0,0,0,0.6); */
+        /* background-image: url('https://media.istockphoto.com/photos/chirimoya-tropical-fruit-with-a-sweet-flavor-and-intense-picture-id626648490'); */
+        no-repeat center center fixed;
+        background: linear-gradient(
+          rgba(0,0,0,0.7),
+          rgba(0,0,0,0.7)
+          ),url('https://media.istockphoto.com/photos/chirimoya-tropical-fruit-with-a-sweet-flavor-and-intense-picture-id626648490');
+        background-size: cover;
+        font-family: sans-serif;
+      }
+
+      header{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .head{
+        color:#fff;
+        font-size: 0.8rem;
+        word-spacing: 0.7rem; /*1rem = 16px*/
+        display: inline-block;
+      }
+      .head h1{
+        color: gold;
+      }
+      .container h1{
+        color: gold;
+      }
+      nav{
+        float: right;
+      }
+      .chiry{
+        color: var(--color01);
+      }
+      ul{
+        border-left: 2px solid coral;
+        margin-top: 1.5rem;
+      }
+      li{
+        display: inline;
+        padding-right: 1.7rem;
+
+      }
+      li a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        /* background-color:gold; */
+      }
+      .opcion{
+        background-color: var(--colorNav); /*#B06323*/
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+      }
+      li a:hover{
+        color: #000;
+      }
+      .quote{
+        border-radius: 1.3rem;
+        padding: 0.5rem 1rem;
+        background-color: red;
+      }
+
+      .container{
+        width: 70%;
+        /*background-color: yellow;*/
+        margin:auto;
+        overflow: hidden;
+        margin-top: 5rem;
+      }
+
+      showcase h1{
+        /* background-color: orange; */
+        font-size: 4rem;
+        margin-bottom: 0;
+      }
+      showcase h3{
+        font-size: 2rem;
+        color: #fff;
+        letter-spacing: 0.2rem;
+        margin-top: 0.5rem;
+      }
+      showcase p{
+        color:#fff;
+        font-family: cursive;
+        font-size: 1.2rem;
+        /* background-color: black; */
+      }
+      a button{
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 0.7rem 1rem;
+        border-radius: 1.3rem;
+        margin-top: 1.3rem;
+      }
+      button:hover{
+        background-color: gray;
+      }
+      aside{
+        width: 90%;
+        margin:auto;
+        color:#fff;
+        font-size: 1.2rem;
+        text-align: right;
+      }
+      .price{
+        color:gold;
+        font-size: 3rem;
+        padding-left: 0.7rem;
+      }
+      .btn{
+        background-color:var(--colorNav) ; /*#E44236*/
+        border:none;
+        border-radius: 5px;
+        padding: 1rem;
+      }
+      @media(max-width:450px){
+        .titleContent{
+          /* background-color: yellow; */
+          width: 100%;
+          height: auto;
+          font-size: 2.1rem;
+        }
+        showcase h3{
+          /* background-color: red; */
+          font-size: 1.5rem;
+          color: #fff;
+          letter-spacing: 0.2rem;
+          margin-top: 0.5rem;
+          text-align: center;
+        }
+        a button{
+          background-color: transparent;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 0.7rem 1rem;
+          border-radius: 1.3rem;
+          margin-top: 1.3rem;
+           margin-left: 4rem;
+        }
+        showcase p{
+          color:#fff;
+          font-family: cursive;
+          font-size: 1.2rem;
+
+          /* background-color: black; */
+        }
+        .opcion{
+          display: inline-block;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Nombre de la pagina -->
+      <div class="head">
+        <h1> <span class="chiry" >CHIRY</span> EXPORT</h1>
+      </div>
+      <!-- NEVAGACION -->
+      <nav>
+        <ul>
+          <li class='opcion'> <a href="#">HOME </a></li>
+          <li class='opcion'> <a href="#">SERVICIOS</a>  </li>
+          <li class='opcion'> <a href="#">PAGES</a>  </li>
+          <li class='opcion'> <a href="#">PORTFOLIO</a>  </li>
+          <li class='opcion'> <a href="#">BLOG</a>  </li>
+          <li class='opcion'> <a href="#">FEAUTERS</a>  </li>
+          <li class='opcion'> <a href="#">SHOP </a> </li>
+          <li> <a href="./secundario/logi01.html" type="button" class="quote">LOGIN IN</a></li>
+        </ul>
+      </nav>
+      <!-- FIN DE NAVEGACION -->
+    </header>
+    <!-- FIN DE HEADER -->
+
+
+    <!-- SHOWCASE -->
+    <showcase>
+      <div class="container">
+        <h1 class="titleContent"> <span class="chiry">CHIRY</span>EXPORT</h1>
+        <h3>Empresa exportadora de chirimoyas</h3>
+        <p>Chiri Expor es una empresa exportadora fundada por jovenes emprendedores
+        universitarios que decidieron emprender este proyecto juntos, a causa
+      de un curso llevado en la Universidad.
+    Poco a poco se irá expandiendo logrando fomentar el crecimiento de los
+  negocios BIONATURALES y aportar a la economía de la Nación.</p>
+           <a href="#"><button >LEER MAS</button></a>
+      </div>
+    </showcase>
+    <!-- END SHOWCASE -->
+    <aside >
+      <p>Servicio completo a solo <span class="price">$299</span> </p>
+      <a href="#"><button class="btn">FREE SEO ANALYSIS</button>  </a>
+    </aside>
+    <!-- FIN DE ASIDE -->
+  </body>
+</html>
